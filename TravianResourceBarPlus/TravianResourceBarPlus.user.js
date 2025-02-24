@@ -15,9 +15,8 @@
 // ==/UserScript==
 
 (function () {
-  console.log("🔥 UserScript avviato!");
-
   // Trova tutte le funzioni globali
+  console.log("🔥 UserScript avviato!");
   for (const key in window) {
     if (typeof window[key] === "function") {
       const originalFn = window[key];
